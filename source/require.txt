@@ -1,0 +1,10 @@
+
+sqlmodel
+sqlalchemy
+datetime
+psycopg2
+authx
+pydantic
+sqlalchemy
+aiosqlite
+greenlet
