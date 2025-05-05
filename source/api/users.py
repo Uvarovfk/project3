@@ -56,7 +56,7 @@ def auth(creds: LogIn, session: SessionDep, response: Response):
         if (p.email == creds.email) & (p.password == creds.password):
             flag = 1
     if flag == 1:
-        token = security.create_access_token(uid=creds.email)
+        token =security.create_access_token(uid=creds.email)
         #послыаем в куки
         response.set_cookie(config.JWT_ACCESS_COOKIE_NAME, token)
         return{'access_token': token}
